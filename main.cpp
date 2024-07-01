@@ -86,16 +86,18 @@ int main (int argc, char const *argv[]) {
     }
 
     // screen 20 x 12 changes with resolution
-    // grid 40 x 24
+    // grid 100 x 100
+    int rows = 100;
+    int columns = 100;
     
-    int grid[40][24];
+    int grid[rows][columns];
     for(int i = 0; i <= 40; i++) {
         for(int j = 0; j <= 24; j ++) {
             int n = rand();
             grid[i][j] = n;
         }
     }
-
+    
 
     /*  TO DO  */
     // GET AMOUNT OF CELLS ON SCREEN AS A VARIABLE
